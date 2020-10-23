@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            height: 100vh;
+
+            display: grid;
+            grid-template-areas: 'header header'
+                                 'nav main'
+                                 'nav footer';
+            grid-template-rows: 50px 1fr 20px;
+            grid-template-columns: 150px 1fr;
+                        
+        }
+        header { 
+            display: block;
+            background-color: #000;
+        }
+
+        header > img{
+            height: 30px;
+        }
+        a { 
+            text-decoration: none;
+            color:#fff;
+        }
+        li{
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        ul { 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            
+            padding: 12px;
+            grid-area: header;
+            background-color: #000;    
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #B7B7B7;
+        }
+        main { 
+            grid-area: main;
+            background-color: #D8FFF1;
+        }
+        footer { 
+            grid-area: footer;
+            background-color: #FF9595;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="">
+        <ul>
+            <li><a href="">Quem Somos </a></li>
+            <li><a href="">Servicos Prestados</a></li>
+            <li><a href="">Equipe</a></li>
+            <li><a href="">Contatos</a></li>
+            
+        </ul>
+    </header>
+    <nav>
+        Menu Lateral de Navegacao
+    </nav>
+    <main>
+        Conteudo principal
+    </main>
+    <footer>
+        Rodape
+    </footer>
+</body>
+</html>

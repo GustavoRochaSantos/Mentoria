@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contato</title>
+</head>
+<body>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    <h2><i>Nossos produtos</i></h2>
+    <ul>
+        <li>Uva</li>
+        <li>Pera</li>
+        <li>Maça</li>
+        <li>Mexirica</li>
+        <li>Lasanha</li>
+    </ul>
+
+    <h2><i>Nosso endereço</i></h2>
+    <p>
+        Rua Jeripagua, 420 - Bairro Santa Maria <br>
+        Brumado, BA - Brasil<br>
+        Tel: (22) 4444.2222<br>
+        <a href="http://www.uol.com.br" target="_blank">www.uol.com.br</a>
+
+    </p>
+    <h2><i>Envie uma mensagem!</i></h2>
+    <form >
+        <table>
+            <tr>
+                <td>
+                    <b>Nome:</b>
+                </td>
+                <td>
+                    <input id="Nome" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Email:</b>
+                </td>
+                <td>
+                    <input id="email" type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Assunto:</b>
+                </td>
+                <td>
+                    <input id="Assunto" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Telefone:</b>
+                </td>
+                <td>
+                    <input id="Telefone" type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Mensagem:</b>
+                </td>
+                <td>
+                    <textarea 
+                        id="Mensagem" 
+                        minlength="100" 
+                        maxlength="400"
+                        rows="10"
+                    ></textarea>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+
+    <br>
+    <div style="position:fixed; padding: 20px; background-color: lightgray; top:100px; right: 50px; width: 600px; float: right;">
+        <h2>Regras:</h2>
+        <ol>
+            <li>O logo do google pode ser qualquer imagem.</li>
+            <li>Os títulos devem estar formatados com itálico.</li>
+            <li>Nossos produtos deve ser uma lista não ordenada, com valores diversos.</li>
+            <li>O endereço deve ser formatado simples, com um link para um site qualquer abrindo em uma aba separada.</li>
+            <li>Formulário de mensagem deve ser construído dentro de uma tabela, com os títulos dos campos em negrito, com botoes de enviar e de limpar o formulário.</li>
+            <li>Fiquem a vontade para fazer qualquer alteração do seu gosto.</li>
+            <li>Deve-se usar somente HTML neste exercício, pois o mesmo está estilizado nas próximas aulas com css.</li>
+        </ol>
+    </div>
+</body>
+</html>
