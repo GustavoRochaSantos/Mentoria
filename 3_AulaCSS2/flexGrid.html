@@ -18,9 +18,11 @@
             grid-template-areas: 'header header'
                                  'nav main'
                                  'nav footer';
+            grid-template-columns: 200px 1fr;
             grid-template-rows: 50px 1fr 20px;
-            grid-template-columns: 150px 1fr;
-                        
+
+            grid-template-columns:repeat(10,10%);
+            grid-template-rows: repeat(10,10%);
         }
         header { 
             display: block;

@@ -8,27 +8,142 @@
   
   <title>Frontend Mentor | Four card feature section</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root { 
+      --Red: hsl(0, 78%, 62%);
+      --Cyan: hsl(180, 62%, 55%);
+      --Orange: hsl(34, 97%, 64%);
+      --Blue: hsl(212, 86%, 64%);
+
+
+
+
+      --VeryDarkBlue: hsl(234, 12%, 34%);
+      --GrayishBlue: hsl(229, 6%, 66%);
+      --VeryLightGray: hsl(0, 0%, 98%);
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: Poppins, sans-serif;
+      font-size: 15px;
+    }
+    body { 
+      background-color: var(--GrayishBlue);
+      height:100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox{
+      width: 400px;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 28px;
+    }
+    h4 { 
+      font-weight: 400;
+      font-size: 28px;
+    }
+    small, text { 
+      font-weight: 200;
+    }
+    small {
+      font-size: 12px;
+    }
+    .cards { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:500px;
+    }
+    .card{
+
+      position: relative;
+      width: 250px;
+      height: 200px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin:10px;
+      border-top:3px solid black;
+    }
+    .title{
+      font-weight: 600;
+    }
+    .card > img { 
+      position:absolute;
+      right:25px;
+      bottom:25px;
+      
+    }
+
+    .red { 
+      border-top-color: var(--Red);
+    }
+    .cyan { 
+      border-top-color: var(--Cyan);
+    }
+    .orange { 
+      border-top-color: var(--Orange);
+    }
+    .blue { 
+      border-top-color: var(--Blue);
+    }
+  </style>
+
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+  <div class="container">
+    <div class="container textbox">
+      <h4 >Reliable, efficient delivery</h4>
+      <h3 >Powered by Technology</h3>
+      <small>Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</small>
+    </div>
+    <div class="container">
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <div class="cards">
+      <div class="card cyan">
+        <div class="title">Supervisor</div>
+        <div class="text">
+          Monitors activity to identify project roadblocks
+        </div>
+        <img src="images/icon-supervisor.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="card .red">
+          <div class="title">Team Builder</div>
+          <div class="text">
+            Scans our talent network to create the optimal team for your project
+          </div>
+          <img src="images/icon-team-builder.svg" alt="">
+        </div>
+        <div class="card orange">
+          <div class="title">Karma</div>
+          <div class="text">
+            Regularly evaluates our talent to ensure quality
+          </div>
+          <img src="images/icon-karma.svg" alt="">
+        </div>
+      </div>
+      <div class="card blue">
+        <div class="title">Calculator</div>
+        <div class="text">
+          Uses data from past projects to provide better delivery estimates
+        </div>
+        <img src="images/icon-calculator.svg" alt="">
+      </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+    </div>
+  </div>
 
 </body>
 </html>
