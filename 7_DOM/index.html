@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .titulo { 
+            font-size: 30px;
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <p>teste de paragrafo</p>
+        <small>teste de small</small>
+
+        <form>
+            <label for="nome"></label>
+            <input name="nome" type="text">
+        </form>
+        <ul id="lista">
+            <li data-xpto>Aula 1</li>
+            <li data-classe>Aula 2</li>
+            <li data-classe>Aula 3</li>
+            <gustavo></gustavo>
+        </ul>
+        <a href="#" onclick="verificaConteudo()">Verificar</a>
+    </div>
+
+    <script>
+        const xpto = document.querySelector('li[data-xpto]')
+        console.log(xpto)
+
+
+        xpto.innerHTML = 'AULA 1'
+        xpto.innerHTML = '<a href="#">Aula1</a>'
+
+        xpto.style.backgroundColor = '#c5c5c5'
+        xpto.style.listStyle = 'none'
+
+        xpto.setAttribute('name', 'xpto')
+        xpto.removeAttribute('name')
+
+        xpto.classList.add('titulo')
+        console.log('existe a classe: ' + xpto.classList.contains('titulo'))
+        xpto.classList.remove('titulo')
+        console.log('existe a classe: ' + xpto.classList.contains('titulo'))
+        xpto.classList.toggle('titulo')
+
+        const newDiv = document.createElement('DIV')
+        newDiv.innerText = 'Nova div criada'
+
+
+        xpto.appendChild(newDiv)
+        xpto.appendChild(newDiv)
+        xpto.appendChild(newDiv)
+
+
+        
+
+        function verificaConteudo(){
+            const inputElem = document.querySelector('input')
+            const form = document.querySelector('form')
+            if(!inputElem.value){
+                alert('vazio')
+
+                inputElem.style.border = "1px solid red"
+
+                const smallElem = document.createElement('small')
+                smallElem.id = 'error'
+                smallElem.classList.add('titulo')
+                smallElem.innerText = 'Campo vazio, por favor verificar'
+                form.append(smallElem)
+            } else {
+                alert('ok')
+                inputElem.style.border = "0px solid red"
+            }
+        }
+
+        const array = []
+
+
+        array.push('1')
+        array.push('2')
+        array.push('3')
+        console.log(array)
+        array.pop()
+        console.log(array)
+
+        console.log(array.join().replace(',','' ))
+    </script>
+</body>
+</html>
