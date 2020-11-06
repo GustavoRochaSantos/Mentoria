@@ -1,0 +1,90 @@
+:root { 
+    --colorBase: #c5c5c5;
+}
+
+* { 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a { 
+    text-decoration: none;
+    color:#000;
+}
+
+body {
+    height:100vh;
+    background-color: var(--colorBase);
+}
+
+.container { 
+    background-color: #FFF;
+    max-width: 400px;
+    height: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+ }
+
+input { 
+    border: 1px solid var(--colorBase);
+    flex: 1;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+
+input::placeholder{ 
+    color: var(--colorBase);
+}
+
+input[type=checkbox]{ 
+    margin-right: 10px;
+}
+
+.button { 
+    margin-left: 10px;
+    padding: 4px 5px;
+    background-color: #4285F4;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+.taskListContainer{ 
+    margin-top: 20px;
+}
+
+ul { 
+    list-style: none;
+}
+
+li { 
+    border:1px solid var(--colorBase);
+    border-bottom: 0px;
+    padding:10px;
+    
+}
+
+li > a {
+    color:red;
+    float: right;
+}
+
+li.selected{ 
+    text-decoration: line-through;
+}
+
+li.selected > a { 
+    display: none;
+}
+
+ul li:nth-last-child(1){
+    border-bottom: 1px solid var(--colorBase);
+}
